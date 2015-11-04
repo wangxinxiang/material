@@ -1,0 +1,11 @@
+Ö´ÐÐÁ¦key store
+password                 zxl_5173
+alias                        jcsc
+first and last name    jcsc
+organization unit       5173_slh
+organization             5173_slh
+city                          zhejiangjinhua
+state                        jinhua
+code                        CN
+
+

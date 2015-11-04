@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/semi_transparent"
+        >
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1">
+
+    </LinearLayout>
+
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_add_name_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:background="@color/white" android:paddingBottom="@dimen/normal_space"
+                  android:layout_alignParentBottom="true" >
+
+        <TextView android:id="@+id/tv_take_pictures" android:layout_width="fill_parent" android:layout_height="@dimen/btn_hight45" android:text="修改头像"
+                  android:layout_marginTop="@dimen/normal_space"  android:textColor="@color/black" android:textSize="@dimen/text_size21"
+                  android:gravity="center"/>
+
+        <View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@color/main_bg"></View>
+
+        <TextView android:id="@+id/tv_user_logout" android:layout_width="fill_parent" android:layout_height="@dimen/btn_hight45" android:text="注销登录"
+                  android:textColor="@color/black" android:textSize="@dimen/text_size21"
+                  android:gravity="center"/>
+
+        <View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@color/main_bg"></View>
+
+        <TextView android:id="@+id/tv_edit_cancle" android:layout_width="fill_parent" android:layout_height="@dimen/btn_hight38" android:text="取消"
+                  android:layout_marginTop="@dimen/normal_space" android:textColor="@drawable/text_blue_red_selector" android:textSize="@dimen/text_size21"
+                  android:layout_centerVertical="true" android:gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+
+        android:paddingLeft="6dp" android:paddingRight="6dp">
+	
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" 
+	        android:gravity="center_horizontal">
+	
+	        <TextView
+	            android:id="@+id/tv_sendtime"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	           	style="@style/chat_text_date_style"
+                    android:visibility="visible"/>
+	        
+	    </LinearLayout>
+	
+        
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="@dimen/normal_space"
+            android:layout_marginBottom="5dp">
+
+            <com.jhlc.material.view.RoundImageView
+                    android:id="@+id/iv_other_userhead"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    imagecontrol:border_outside_color="#f0f0f0"
+                    imagecontrol:border_thickness="2dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/defult_user_headimg"
+                    android:layout_centerVertical="true"/>
+
+
+            <RelativeLayout
+                    android:id="@+id/tv_bg"
+                    android:layout_toRightOf="@id/iv_other_userhead"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/chatfrom_bg"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:focusable="true">
+
+            <TextView
+                    android:id="@+id/tv_chatcontent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/chat_content_date_style"
+                    android:text=""
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/space_7" android:paddingRight="@dimen/space_7"/>
+                    <ImageView
+                            android:id="@+id/iv_chatcontent"
+                            android:visibility="invisible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:layout_centerVertical="true"/>
+	        </RelativeLayout>
+
+	            <TextView 
+	            android:id="@+id/tv_username" 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/iv_other_userhead"
+	            android:layout_alignParentLeft="true"
+	            android:layout_toLeftOf="@id/tv_bg"
+	            style="@style/chat_text_name_style" android:visibility="gone"/>
+
+
+            <TextView
+                    android:id="@+id/tv_lastreply_content_system"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="系统提示"
+                    style="@style/chat_content_system_style"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"/>
+	           
+	    </RelativeLayout>
+	    
+</LinearLayout>

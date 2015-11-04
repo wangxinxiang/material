@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/space_12">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size16"
+        android:layout_weight="1"
+        android:id="@+id/tv_item_notice_title"
+        android:textColor="@color/black"
+        android:singleLine="true"
+        android:text="2015"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size12"
+        android:textColor="@color/gray"
+        android:id="@+id/tv_item_notice_time"
+        android:text="2015"/>
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">中冠物资</string>
+
+    <!--new 1.45 -->
+    <string name="tab_task">上级</string>
+    <string name="tab_exe">下级</string>
+    <string name="tab_log">备忘录</string>
+    <string name="tab_sup">公告</string>
+
+    <string name="btn_up">上级</string>
+    <string name="btn_down">下属</string>
+    <string name="btn_department">处室任务</string>
+
+    <string name="tv_exe_doing">执行中</string>
+    <string name="tv_exe_finish">完成</string>
+
+    <string name="rbtn_toggle_left">缺日志</string>
+    <string name="rbtn_toggle_right">满日志</string>
+    <string name="tv_sup_child_lack">本月缺少：</string>
+    <string name="tv_task_dep_child_state_unfinish">未完成</string>
+    <string name="tv_task_dep_child_state_finish">已完成</string>
+    <string name="tv_task_dep_edit">编辑</string>
+    <string name="tv_task_dep_delete">删除</string>
+
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="btn_change_time">修改时间</string>
+    <string name="edt_task_hint">请输入内容，字数限制500字</string>
+    <string name="tv_my_log">我的日志</string>
+    <string name="edt_log_hint">请输入搜索内容</string>
+
+    <!--old 1.44 -->
+    <string name="next_step">下一步</string>
+    <string name="operate_complete">完成</string>
+    <string name="my_name">请输入真实姓名</string>
+    <string name="my_head_img">我的照片</string>
+    <string name="selete_head_img">选择照片</string>
+    <string name="take_pic">拍照</string>
+    <string name="no_data">暂无内容</string>
+    <string name="content_us_tip">本软件支持定制开发，请提需求与建议，采纳奖励100-5000元</string>
+    <string name="my_conten_way">联系方式：</string>
+    <string name="my_phone_num">请输入您的手机号</string>
+    <string name="edit_content">内容</string>
+    <string name="touch_edit">点击这里输入</string>
+    <string name="confirm">确定</string>
+    <string name="submit">提交</string>
+    <string name="limit_time">限期</string>
+    <string name="edit_report_content">输入汇报内容</string>
+    <string name="task">任务</string>
+    <string name="down_task">点击这里给下属布置任务</string>
+    <string name="up_task">点击这里帮领导添加任务</string>
+
+    <string name="no_network">无网络连接</string>
+    <string name="no_response">网络请求失败</string>
+    <string name="success_response">网络请求成功</string>
+
+    <!-- title -->
+    <string name="tab_upuser">领导交办</string>
+    <string name="tab_downuser">下属任务</string>
+    <string name="tab_notabook">我的备忘录</string>
+    <string name="tab_contentus">联系开发者</string>
+
+
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">刷新\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+    <string name="loading_msg_failure">加载数据失败,请检查网络,点击刷新</string>
+    <string name="loading_msg_failure_t">加载数据失败，请检查网络</string>
+    <string name="loading_msg_wait">加载中...</string>
+    <string name="my_daily">我的日志</string>
+
+    <string name="comment_replace">回复:</string>
+    <string name="comment_send"><b>发送</b></string>
+    <string name="comment_reply">回复</string>
+    <string name="fragment_notice_title">公告</string>
+    <string name="MainFragment_back">再按一次退出</string>
+    <string name="upordown_refresh">刷新数据</string>
+    <string name="change_password_old">请输入原始密码</string>
+    <string name="change_password_new">请输入新密码</string>
+    <string name="change_password_new_repeat">请再次输入新密码</string>
+
+
+</resources>

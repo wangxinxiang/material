@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+        >
+
+    <RelativeLayout android:id="@+id/ll_add_task" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_15">
+
+        <ImageButton android:id="@+id/img_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/close_edit_selector"
+                     android:background="@color/white" android:padding="@dimen/normal_space"/>
+
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"  android:layout_weight="1"
+                        android:layout_toRightOf="@+id/img_close" android:layout_toLeftOf="@+id/rl_confirm_edit"
+                        android:layout_alignTop="@+id/rl_confirm_edit">
+
+            <EditText android:id="@+id/et_edit_task" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:hint="点击这里输入内容" android:textSize="@dimen/text_size14" android:textColor="@color/gray"
+                  android:background="@drawable/edit_gray_bg" android:paddingLeft="@dimen/space_7" android:textCursorDrawable="@drawable/cursor_bg"
+                  android:layout_marginLeft="@dimen/normal_space" android:layout_marginTop="@dimen/space_7" android:gravity="center" android:layout_marginRight="@dimen/normal_space"/>
+
+            <RelativeLayout android:id="@+id/rl_limit_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/round_text_bg"
+                            android:layout_marginTop="@dimen/space_15" android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/et_edit_task" android:layout_alignLeft="@+id/et_edit_task"
+                            android:layout_alignRight="@+id/et_edit_task">
+                <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <TextView android:id="@+id/tv_limit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="时间" android:textSize="@dimen/text_size14" android:textColor="@color/gray"
+                              android:layout_centerVertical="true"/>
+                    <TextView android:id="@+id/tv_limit_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2014年10月18日" android:textSize="@dimen/text_size16" android:textColor="@color/black"
+                              android:layout_marginLeft="@dimen/space_7"
+                              android:layout_toRightOf="@+id/tv_limit"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ImageButton android:id="@+id/rl_confirm_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/submit_edit_selector"
+                 android:padding="@dimen/normal_space" android:background="@color/white"
+                 android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+            <LinearLayout
+                    android:id="@+id/ll_timePicker"
+                    android:layout_width="wrap_content" android:visibility="gone"
+                    android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_20"
+                    android:layout_centerHorizontal="true" android:layout_below="@+id/ll_add_task">
+
+                <com.jhlc.material.view.wheelview.WheelView
+                        android:id="@+id/day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"/>
+
+                <com.jhlc.material.view.wheelview.WheelView
+                        android:id="@+id/hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:visibility="gone"
+                        android:layout_marginLeft="10dip"/>
+
+            </LinearLayout>
+
+</RelativeLayout>

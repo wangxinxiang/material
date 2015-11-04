@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 新增颜色-->
+    <color name="blue_light">#46D2FF</color>
+    <color name="main_bg">#ECF1F7</color>
+    <color name="title_area_bg">#F0F5FB</color>
+    <color name="title_area_line">#C5D8E7</color>
+    <color name="divider">#F8F9FB</color>
+    <color name="tv_gray">#9D9D9D</color>
+
+
+    <!-- 旧版颜色-->
+    <color name="transparent">#50000000</color>
+    <color name="transparency">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="gray">#556f8a</color>
+
+    <color name="white">#ffffffff</color>
+
+    <color name="blue">#16B8AD</color>
+
+    <color name="chatto_bg_color">#46D2FF</color>
+    <color name="chatfrom_bg_color">#FAFAFA</color>
+    <color name="light_blue">#B7CDCB</color>
+
+    <color name="main_bg_gray">#F8F9FB</color>
+    <color name="main_bg_gray_linght">#F7F8FC</color>
+
+    <color name="linegray">#f0f0f0</color>
+    <color name="semi_transparent">#7f000000</color>
+    <color name="red_light">#ffff4444</color>
+    <color name="yellow">#FFA101</color>
+    <color name="main_blue">#00B5EE</color>
+    <color name="main_red">#FF2B2B</color>
+
+    <color name="progress_surplus">#5898D8</color>
+    <color name="progress_already">#ABD624</color>
+    <color name="loading_bg">#EEF3FA</color>
+
+    <color name="setting_head_bg_gray">#85A1B6</color>
+    <color name="notebook_divider">#75B7CDCB</color>
+    <color name="setting_bg">#ECF1F7</color>
+
+</resources>

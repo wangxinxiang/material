@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dip"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:paddingTop="@dimen/normal_space"
+
+              android:background="@drawable/list_line_bg_selector"
+              android:descendantFocusability="blocksDescendants"
+        >
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+        <TextView
+                android:id="@+id/tv_sendtask_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10-19 上午8:00"
+                style="@style/chat_text_date_style"/>
+
+        <TextView
+                android:id="@+id/tv_sendtask_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="金华国贸宾馆"
+                android:visibility="gone"
+                style="@style/chat_text_date_style"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="@dimen/normal_space"
+            android:paddingRight="@dimen/normal_space"
+            android:paddingLeft="@dimen/normal_space"
+            >
+
+        <com.jhlc.material.view.RoundImageView
+                android:id="@+id/iv_other_userhead"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                imagecontrol:border_outside_color="#f0f0f0"
+                imagecontrol:border_thickness="2dp"
+                android:background="@drawable/defult_user_headimg"/>
+
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:background="@drawable/chatfrom_bg"
+                      android:paddingLeft="@dimen/space_15"
+                      android:paddingRight="@dimen/normal_space"
+                      android:layout_marginLeft="@dimen/space_7"
+                      android:layout_centerVertical="true"
+                      android:layout_toRightOf="@id/iv_other_userhead"
+                >
+
+            <TextView
+                    android:id="@+id/tv_my_task"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/chat_content_date_style"
+                    android:layout_marginTop="@dimen/normal_space"
+                    android:text="text"/>
+
+            <ImageView android:id="@+id/img_invoice" android:layout_width="wrap_content" android:layout_height="80dip"
+                       android:src="@drawable/take_invoice_normal_white" android:background="@color/chatfrom_bg_color" android:layout_margin="@dimen/space_7"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+
+        <TextView
+                android:id="@+id/tv_lastreply_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_7"
+                android:padding="2dp"
+                android:textColor="@color/gray"
+                android:textSize="12sp"
+                android:visibility="gone"
+                />
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:id="@+id/rl_lastreply_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="@dimen/normal_space"
+            android:layout_marginBottom="@dimen/normal_space"
+            android:paddingRight="@dimen/normal_space"
+            android:paddingLeft="@dimen/normal_space"
+            android:visibility="gone"
+            >
+
+        <com.jhlc.material.view.RoundImageView
+                android:id="@+id/iv_my_userhead2"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                imagecontrol:border_outside_color="#f0f0f0"
+                imagecontrol:border_thickness="2dp"
+                android:background="@drawable/defult_user_headimg"/>
+
+        <TextView
+                android:id="@+id/tv_lastreply_content"
+                android:layout_toLeftOf="@id/iv_my_userhead2"
+                android:layout_marginRight="@dimen/space_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chatto_bg"
+                android:paddingLeft="@dimen/normal_space"
+                android:paddingRight="@dimen/space_15"
+                android:textSize="15sp"
+                android:textColor="#ff000000"
+                android:gravity="left|center"
+                android:lineSpacingExtra="2dp"
+                android:clickable="true"
+                android:focusable="true" android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout android:id="@+id/ll_payment_opt" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/edit_hight" android:background="@drawable/btn_notice_normal" android:paddingTop="@dimen/space_7" android:paddingBottom="@dimen/space_7" android:layout_marginTop="@dimen/normal_space">
+        <ImageButton android:id="@+id/btn_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:background="@color/white"  android:src="@drawable/submit_opt_selector" android:text="确认" android:textSize="@dimen/text_size18"  android:textColor="@color/gray"/>
+        <ImageButton android:id="@+id/btn_cancle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:background="@color/white"   android:src="@drawable/close_edit_selector"  android:text="取消" android:textSize="@dimen/text_size18"  android:textColor="@color/gray"/>
+    </LinearLayout>
+
+</LinearLayout>

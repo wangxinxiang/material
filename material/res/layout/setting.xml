@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/setting_bg"
+        >
+
+    <LinearLayout
+            android:id="@+id/ll_title"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+        <RelativeLayout android:id="@+id/rl_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我"
+                    android:textSize="@dimen/text_size21"
+                    android:id="@+id/textView" android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/normal_space"
+                    android:textColor="@color/gray"/>
+
+
+        </RelativeLayout>
+
+        <View android:layout_width="fill_parent" android:layout_height="2dip"
+              android:background="@drawable/title_part_line"
+              android:layout_below="@+id/rl_title"/>
+
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rl_loading" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_below="@+id/ll_title">
+        <include layout="@layout/zxl_include_processbar"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_head_image" android:layout_below="@+id/rl_loading"
+                    android:layout_width="fill_parent" android:layout_height="150dip"
+                    android:background="@color/setting_head_bg_gray"
+            >
+
+        <com.jhlc.material.view.RoundImageView
+                android:id="@+id/img_head"
+                android:layout_width="70dip"
+                android:layout_height="70dip"
+                imagecontrol:border_outside_color="#f0f0f0"
+                imagecontrol:border_thickness="2dp"
+                android:background="@drawable/defult_user_headimg"
+                android:layout_centerHorizontal="true" android:layout_marginTop="20dip"/>
+
+        <TextView android:id="@+id/tv_user_name" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_15"
+                  android:textColor="@color/white" android:textSize="@dimen/text_size21"
+                  android:layout_gravity="center_horizontal"
+                  android:layout_centerHorizontal="true" android:layout_below="@+id/img_head"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/rl_layout_info" android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_head_image">
+        <Button android:id="@+id/ibtn_changeHeadImg" android:layout_width="fill_parent"
+                android:layout_height="@dimen/btn_hight45"
+                android:layout_marginTop="@dimen/space_20"
+                android:background="@drawable/setting_btn_selector" android:text="更换头像"
+                android:textSize="@dimen/text_size18" android:textColor="@color/gray"/>
+
+        <Button android:id="@+id/ibtn_changePassWord" android:layout_width="fill_parent"
+            android:layout_height="@dimen/btn_hight45"
+            android:layout_below="@+id/ibtn_changeHeadImg" android:layout_marginTop="3px"
+            android:background="@drawable/setting_btn_selector" android:text="更换密码"
+            android:textSize="@dimen/text_size18" android:textColor="@color/gray"/>
+
+        <RelativeLayout android:id="@+id/rl_baoxiao" android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" android:layout_below="@+id/ibtn_changePassWord"
+                        android:layout_marginTop="@dimen/space_20"
+                        android:background="@drawable/setting_btn_selector" android:visibility="gone">
+
+            <Button android:id="@+id/ibtn_baoxiao" android:layout_width="wrap_content"
+                    android:layout_height="@dimen/btn_hight45"
+                    android:text="体验报销版本"
+                    android:background="@drawable/setting_btn_selector"
+                    android:textSize="@dimen/text_size18" android:textColor="@color/gray"
+                    android:layout_centerHorizontal="true"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/new_iv"
+                    android:id="@+id/imageView" android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ibtn_baoxiao"/>
+
+        </RelativeLayout>
+        <Button android:id="@+id/ibtn_logout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/btn_hight45"
+                android:layout_below="@+id/rl_baoxiao" android:layout_marginTop="@dimen/space_20"
+                android:background="@drawable/setting_btn_selector" android:text="退出"
+                android:textSize="@dimen/text_size18" android:textColor="@color/gray"/>
+    </RelativeLayout>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="版本号"
+            android:id="@+id/version_tv" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"/>
+
+
+</RelativeLayout>

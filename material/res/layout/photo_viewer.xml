@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/semi_transparent"
+                >
+
+    <include android:id="@+id/zxl_title" layout="@layout/zxl_title_include" />
+
+    <ImageView
+            android:id="@+id/iv_photo_viewer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="matrix"
+            android:layout_below="@id/zxl_title"/>
+
+</RelativeLayout>

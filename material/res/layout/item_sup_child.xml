@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/list_bg_selector"
+              android:paddingRight="@dimen/space_14"
+              android:paddingLeft="@dimen/space_14"
+              android:paddingBottom="@dimen/space_10"
+              android:paddingTop="@dimen/space_10"
+        >
+    <com.jhlc.material.view.RoundImageView
+            android:id="@+id/round_head_image_sup"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            imagecontrol:border_outside_color="#f0f0f0"
+            imagecontrol:border_thickness="3dp"
+            android:background="@drawable/defult_user_headimg"/>/>
+    <TextView android:id="@+id/tv_sup_child_name"
+              android:layout_width="0dp"
+              android:layout_weight="0.6"
+              android:layout_height="fill_parent"
+              android:textColor="@color/black"
+              android:textSize="@dimen/text_size16"
+              android:text="卢赛华"
+              android:gravity="center|left"
+              android:layout_marginLeft="@dimen/space_4"
+            />
+    <TextView android:id="@+id/tv_sup_child_job"
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_height="fill_parent"
+              android:text="副局长副局长副局长副局长副局长"
+              android:textColor="@color/gray"
+              android:textSize="@dimen/text_size14"
+              android:gravity="center|left"
+            />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="本月缺少："
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size14"
+            android:gravity="center|right"
+            android:layout_marginLeft="@dimen/space_2"
+            />
+    <TextView
+            android:id="@+id/tv_sup_child_lack"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="100"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size14"
+            android:gravity="center|right"
+            />
+
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="@dimen/space_12"
+              android:paddingRight="@dimen/space_12"
+              android:paddingTop="@dimen/space_6"
+              android:paddingBottom="@dimen/space_6"
+              android:background="@color/linegray">
+    <ImageView
+        android:id="@+id/iv_red_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/red_dot"
+        android:visibility="gone"
+        />
+    <TextView
+            android:id="@+id/tv_log_group_office_name"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:textColor="@color/semi_transparent"
+            android:textSize="@dimen/text_size18"
+            android:text="局领导"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            />
+
+    <ImageView
+            android:layout_width="@dimen/arrow_size"
+            android:layout_height="@dimen/arrow_size"
+            android:id="@+id/img_log_group_expand"
+            android:background="@color/transparency"
+            android:padding="@dimen/arrow_padding"
+            />
+</LinearLayout>

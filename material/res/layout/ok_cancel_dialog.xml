@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/white">
+    <TextView android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_dialog_message"
+              android:text="提示内容！"
+              android:gravity="center"
+              android:paddingLeft="@dimen/space_40"
+              android:paddingRight="@dimen/space_40"
+              android:paddingTop="@dimen/space_20"
+              android:paddingBottom="@dimen/space_20"
+              android:textSize="@dimen/text_size18"
+              android:textColor="@color/black"
+             />
+    <View android:layout_width="fill_parent"
+          android:layout_height="1dp"
+          android:background="@color/divider"/>
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <Button android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/list_bg_selector"
+                android:text="@string/dialog_ok"
+                android:textSize="@dimen/text_size16"
+                android:textColor="@drawable/tv_blue_gray_selector"
+                android:id="@+id/btn_dialog_ok"
+                />
+        <View android:layout_width="1dip"
+              android:layout_height="fill_parent"
+              android:background="@color/divider"/>
+        <Button android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/list_bg_selector"
+                android:text="@string/dialog_cancel"
+                android:textSize="@dimen/text_size16"
+                android:textColor="@drawable/tv_blue_gray_selector"
+                android:id="@+id/btn_dialog_cancel"
+
+                />
+    </LinearLayout>
+
+</LinearLayout>

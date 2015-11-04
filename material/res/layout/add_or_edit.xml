@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+    <include layout="@layout/zxl_title_button_include"/>
+    <ScrollView android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <EditText android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/edt_task_input"
+                      android:textSize="@dimen/text_size16"
+                      android:textColor="@color/black"
+                      android:background="@color/white"
+                      android:padding="@dimen/space_12"
+                      android:hint="@string/edt_task_hint"
+                      android:maxLength="500"
+                    />
+
+            <View android:layout_width="fill_parent"
+                  android:layout_height="2dp"
+                  android:layout_marginLeft="@dimen/space_12"
+                  android:layout_marginRight="@dimen/space_12"
+                  android:background="@color/main_bg"
+                    />
+            <TextView android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/tv_work_count"
+                      android:textColor="@color/gray"
+                      android:gravity="right"
+                      android:text="0/500"
+                      android:paddingRight="@dimen/space_12"
+                      android:textSize="@dimen/text_size12"/>
+            <LinearLayout android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:id="@+id/ll_time"
+                          android:paddingLeft="@dimen/space_12"
+                          android:paddingRight="@dimen/space_12"
+                          android:layout_marginTop="@dimen/space_4">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/tv_time"
+                          android:text="2015/06/19"
+                          android:textColor="@color/black"
+                          android:layout_weight="1"
+                          android:paddingTop="@dimen/space_12"
+                          android:paddingBottom="@dimen/space_12"
+                        />
+                <Button android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_change_time"
+                        android:text="@string/btn_change_time"
+                        android:textColor="@color/white"
+                        android:background="@drawable/small_btn_blue_selector"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

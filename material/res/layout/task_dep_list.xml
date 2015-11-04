@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+              <include layout="@layout/zxl_title_button_include" />
+    <ExpandableListView
+            android:id="@+id/exp_lv_task_dep"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparency"
+            android:background="@color/white"
+            android:focusable="true"
+            android:groupIndicator="@null"
+            android:dividerHeight="1dp"
+            android:divider="@color/white"
+            android:childDivider="@color/divider"
+            />
+</LinearLayout>

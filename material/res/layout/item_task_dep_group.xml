@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_bg_gray"
+                android:paddingLeft="@dimen/space_12"
+                android:paddingRight="@dimen/space_12"
+                android:descendantFocusability="blocksDescendants"
+        >
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_group_title"
+              android:text="年度任务"
+              android:paddingTop="@dimen/space_12"
+              android:paddingBottom="@dimen/space_12"
+              android:textColor="@color/blue_light"
+              android:textSize="@dimen/text_size18"
+              android:layout_centerVertical="true"
+              android:layout_alignParentLeft="true"/>
+    <ImageButton android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/add_content_selector"
+                 android:background="@color/transparency"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentRight="true"
+                 android:id="@+id/ibtn_group_add" android:visibility="gone"/>
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="2dip"
+               android:background="@color/blue_light"
+               android:layout_below="@+id/tv_group_title"
+               android:layout_alignLeft="@id/tv_group_title"
+               android:layout_alignRight="@id/tv_group_title"/>
+</RelativeLayout>

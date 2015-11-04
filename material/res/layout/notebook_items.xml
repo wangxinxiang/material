@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+              android:background="@color/white">
+
+    <RelativeLayout android:layout_below="@+id/title_part_line" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:paddingLeft="@dimen/space_15"
+                    android:paddingRight="@dimen/space_15">
+
+        <RelativeLayout android:id="@+id/rl_today" android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/space_7" android:paddingBottom="@dimen/space_7">
+
+            <TextView android:id="@+id/tv_note_today" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text="今天"
+                      android:layout_marginTop="@dimen/normal_space" android:textColor="@color/main_blue"
+                      android:textSize="@dimen/text_size21"
+                      android:layout_centerVertical="true"/>
+
+            <ImageButton android:id="@+id/img_note_today" android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:background="@drawable/add_content_selector"
+                         android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/rl_tomorrow" android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/space_7" android:paddingBottom="@dimen/space_7"
+                        android:layout_below="@+id/rl_today">
+
+            <TextView android:id="@+id/tv_note_tomorrow" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text="明天"
+                      android:layout_marginTop="@dimen/normal_space" android:textColor="@color/main_blue"
+                      android:textSize="@dimen/text_size21"
+                      android:layout_centerVertical="true"/>
+
+            <ImageButton android:id="@+id/img_note_tomorrow" android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:background="@drawable/add_content_selector"
+                         android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/rl_recent" android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_tomorrow" android:paddingTop="@dimen/space_7"
+                        android:paddingBottom="@dimen/space_7">
+
+            <TextView android:id="@+id/tv_note_recent" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text="近期"
+                      android:layout_marginTop="@dimen/normal_space" android:textColor="@color/main_blue"
+                      android:textSize="@dimen/text_size21"
+                      android:layout_centerVertical="true"/>
+
+            <ImageButton android:id="@+id/img_note_recent" android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:background="@drawable/add_content_selector"
+                         android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/rl_later" android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_recent" android:paddingTop="@dimen/space_7"
+                        android:paddingBottom="@dimen/space_7">
+
+            <TextView android:id="@+id/tv_note_later" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text="以后"
+                      android:layout_marginTop="@dimen/normal_space" android:textColor="@color/main_blue"
+                      android:textSize="@dimen/text_size21"
+                      android:layout_centerVertical="true"/>
+
+            <ImageButton android:id="@+id/img_note_later" android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:background="@drawable/add_content_selector"
+                         android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/space_15"
+                    android:visibility="gone">
+        <TextView android:id="@+id/tv_note_content"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="网页改版"
+                  android:textColor="@color/gray"
+                  android:textSize="@dimen/text_size16"
+                  android:layout_marginTop="@dimen/space_7"/>
+        <TextView android:id="@+id/tv_note_time"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="21:00"
+                  android:textColor="@color/gray"
+                  android:textSize="@dimen/text_size14"
+                  android:layout_marginBottom="@dimen/space_7"
+                  android:layout_marginTop="@dimen/space_7"
+                  android:layout_below="@+id/tv_note_content"/>
+    </RelativeLayout>
+
+    <LinearLayout android:id="@+id/ll_operate_notebook"
+                  android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/white"
+                  android:visibility="gone"
+                  android:gravity="center_vertical">
+
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:clickable="true"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                >
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/set_top_selector"/>
+            <TextView android:id="@+id/tv_complete"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="完成"
+                      android:textColor="@color/white"
+                      android:visibility="gone"
+                      android:layout_marginLeft="@dimen/space_7"
+                      android:textSize="@dimen/text_size16"/>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:clickable="true"
+                      android:gravity="center"
+                      android:layout_weight="1">
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/edit_selector"/>
+            <TextView android:id="@+id/tv_edit"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="编辑"
+                      android:textColor="@color/white"
+                      android:visibility="gone"
+                      android:layout_marginLeft="@dimen/space_7"
+                      android:textSize="@dimen/text_size16"/>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:clickable="true"
+                      android:layout_weight="1"
+                      android:gravity="center">
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/delete_selector"/>
+            <TextView android:id="@+id/tv_delete"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="删除"
+                      android:textColor="@color/white"
+                      android:visibility="gone"
+                      android:layout_marginLeft="@dimen/space_7"
+                      android:textSize="@dimen/text_size16"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="@drawable/zxl_dialog_bg"
+                    android:paddingLeft="@dimen/normal_space">
+        <TextView android:id="@+id/tv_finish_note"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="网页改版"
+                  android:textColor="@color/gray"
+                  android:textSize="@dimen/text_size16"
+                  android:layout_marginTop="@dimen/text_space"/>
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/finifh_task"
+                   android:layout_below="@+id/tv_finish_note"/>
+
+        <ImageButton android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/dellete_finish"
+                     android:layout_centerVertical="true"
+                     android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+

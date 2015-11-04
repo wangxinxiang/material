@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_hight">54dp</dimen>
+
+    <dimen name="text_size21">22sp</dimen>
+    <dimen name="text_size18">19sp</dimen>
+    <dimen name="text_size16">17sp</dimen>
+    <dimen name="text_size14">15sp</dimen>
+    <dimen name="text_size12">13sp</dimen>
+
+    <dimen name="text_space">3dip</dimen>
+    <dimen name="space_7">7dip</dimen>
+    <dimen name="normal_space">10dip</dimen>
+    <dimen name="space_15">15dip</dimen>
+    <dimen name="space_20">20dip</dimen>
+    <dimen name="space_25">30dip</dimen>
+    <dimen name="space_30">30dip</dimen>
+    <dimen name="space_60">60dip</dimen>
+
+    <dimen name="edit_hight">45dip</dimen>
+
+
+    <dimen name="btn_close">32dip</dimen>
+    <dimen name="btn_hight45">45dip</dimen>
+    <dimen name="btn_hight38">38dip</dimen>
+    <dimen name="popmenu_width">240dip</dimen>
+
+
+    <dimen name="slidingmenu_offset">100dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+
+</resources>

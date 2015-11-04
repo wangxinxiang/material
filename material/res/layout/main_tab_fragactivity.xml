@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            </FrameLayout>
+    <com.jhlc.material.view.MyRadioGroup
+            android:id="@+id/bottom_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_bottom_bg"
+            android:orientation="horizontal"
+            >
+        <RelativeLayout
+                android:id="@+id/rl_upuser"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            <RadioButton
+                    android:id="@+id/tab_rbtn_task"
+                    style="@style/rbtn_tab_bottom"
+                    android:layout_width="match_parent"
+                    android:drawableTop="@drawable/tab_upuser_selector"
+                    android:text="@string/tab_task"
+
+                    />
+
+            <RelativeLayout
+                    android:id="@+id/rl_task_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingRight="@dimen/space_20"
+                    android:paddingTop="@dimen/space_2"
+                    android:visibility="gone"
+                    >
+                <ImageView
+                        android:id="@+id/img_up_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/red_dot"
+                        />
+                <TextView
+                        android:id="@+id/tv_up_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:layout_centerInParent="true" android:visibility="gone"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_down"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/tab_rbtn_exe"
+                style="@style/rbtn_tab_bottom"
+                android:layout_width="match_parent"
+                android:drawableTop="@drawable/tab_downuser_selector"
+                android:text="@string/tab_exe"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_down_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:paddingRight="@dimen/space_20"
+                android:paddingTop="@dimen/space_2"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/red_dot"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:layout_centerInParent="true" android:visibility="gone"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RadioButton
+                android:id="@+id/tab_rbtn_log"
+                style="@style/rbtn_tab_bottom"
+                android:drawableTop="@drawable/tab_rbtn_log_selector"
+                android:text="@string/tab_log"
+               />
+
+        <RadioButton
+                android:id="@+id/tab_rbtn_sup"
+                style="@style/rbtn_tab_bottom"
+                android:drawableTop="@drawable/tab_rbtn_sup_selector"
+                android:text="@string/tab_sup"
+               />
+
+    </com.jhlc.material.view.MyRadioGroup>
+</LinearLayout>

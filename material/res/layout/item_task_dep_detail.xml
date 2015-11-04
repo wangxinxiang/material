@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_bg_selector"
+                android:padding="@dimen/space_12"
+
+        >
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_task_dep_time"
+              android:textSize="@dimen/text_size14"
+              android:textColor="@color/gray"
+              android:text="发布时间："
+              android:layout_alignParentLeft="true"
+            />
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_task_dep_edit"
+            android:textSize="@dimen/text_size14"
+            android:textColor="@drawable/tv_blue_gray_selector"
+            android:text="@string/tv_task_dep_edit"
+            android:paddingBottom="@dimen/space_12"
+            android:paddingLeft="@dimen/space_12"
+            android:paddingRight="@dimen/space_12"
+            android:background="@color/transparency"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"/>
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_task_dep_delete"
+            android:textSize="@dimen/text_size14"
+            android:textColor="@drawable/tv_blue_gray_selector"
+            android:text="@string/tv_task_dep_delete"
+            android:paddingBottom="@dimen/space_12"
+            android:paddingLeft="@dimen/space_12"
+            android:paddingRight="@dimen/space_12"
+            android:layout_toLeftOf="@id/btn_task_dep_edit"
+            android:background="@color/transparency"
+            android:visibility="gone"
+            />
+
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_task_dep_context"
+              android:textSize="@dimen/text_size16"
+              android:textColor="@color/black"
+              android:text=""
+              android:layout_alignParentLeft="true"
+              android:layout_below="@id/tv_task_dep_time"
+              android:paddingTop="@dimen/space_10"
+            />
+
+</RelativeLayout>

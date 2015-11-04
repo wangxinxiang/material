@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:id="@+id/ll_my_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingBottom="@dimen/space_4"
+        android:paddingLeft="@dimen/space_12"
+        android:paddingRight="@dimen/space_12"
+        android:paddingTop="@dimen/space_4"
+
+        >
+
+        <com.jhlc.material.view.RoundImageView
+            android:id="@+id/img_head_photo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/defult_user_headimg"
+            imagecontrol:border_outside_color="#f0f0f0"
+            imagecontrol:border_thickness="2dp" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/normal_space"
+            android:gravity="center"
+            android:text="我"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size16" />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/title_part_line"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@id/ll_my_info"
+        android:background="@drawable/title_part_line" />
+
+
+    <com.jhlc.material.view.PullToRefreshView
+        android:id="@+id/pull_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_part_line"
+        android:orientation="vertical">
+
+        <com.idunnololz.widgets.AnimatedExpandableListView
+            android:id="@+id/notebook_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_part_line"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:fadingEdgeLength="0dp"
+            android:fastScrollEnabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:groupIndicator="@null"
+            android:listSelector="#00000000" />
+
+    </com.jhlc.material.view.PullToRefreshView>
+
+</RelativeLayout>

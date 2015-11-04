@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+        >
+    <include android:id="@+id/zxl_title" layout="@layout/zxl_title_include"/>
+
+    <EditText android:id="@+id/et_edit_task"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:hint="我想..."
+              android:textSize="@dimen/text_size16"
+              android:textColor="@color/gray"
+              android:background="@drawable/ui_textfield_selector"
+              android:paddingLeft="@dimen/space_7"
+              android:textCursorDrawable="@drawable/cursor_bg"
+              android:layout_marginLeft="@dimen/normal_space"
+              android:layout_marginTop="@dimen/space_7"
+              android:layout_marginRight="@dimen/normal_space"
+              android:layout_below="@+id/zxl_title"/>
+
+</RelativeLayout>

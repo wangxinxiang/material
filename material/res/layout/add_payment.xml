@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+        >
+
+    <include android:id="@+id/zxl_title" layout="@layout/zxl_title_include" />
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical"
+            android:padding="@dimen/space_15">
+
+        <ImageView android:id="@+id/ibtn_take_invoice" android:layout_width="100dip" android:layout_height="100dip"
+                   android:src="@drawable/take_invoice_selector" android:scaleType="fitXY"/>
+
+        <EditText android:id="@+id/et_expense_address" android:layout_width="fill_parent" android:layout_height="@dimen/edit_hight"
+                  android:hint="开销地点" android:textSize="@dimen/text_size16" android:textColor="@color/gray"
+                  android:background="@drawable/main_bottom_bg" android:paddingLeft="@dimen/space_7"
+                  android:textCursorDrawable="@drawable/cursor_bg" android:layout_marginTop="@dimen/space_7" />
+
+        <EditText android:id="@+id/et_expense_thing" android:layout_width="fill_parent" android:layout_height="@dimen/edit_hight"
+                  android:hint="开销事项" android:textSize="@dimen/text_size16" android:textColor="@color/gray"
+                  android:background="@drawable/main_bottom_bg" android:paddingLeft="@dimen/space_7"
+                  android:textCursorDrawable="@drawable/cursor_bg"  />
+
+        <EditText android:id="@+id/et_expense_money" android:layout_width="fill_parent" android:layout_height="@dimen/edit_hight"
+                  android:hint="开销金额" android:textSize="@dimen/text_size16" android:textColor="@color/gray"
+                  android:numeric="integer"
+                  android:background="@drawable/main_bottom_bg" android:paddingLeft="@dimen/space_7"
+                  android:textCursorDrawable="@drawable/cursor_bg"  />
+    </LinearLayout>
+    <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:visibility="invisible"/>
+</LinearLayout>

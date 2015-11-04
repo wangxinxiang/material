@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_bg_gray">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:paddingRight="@dimen/space_15">
+        <ImageButton android:id="@+id/ibtn_add_users" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:src="@drawable/add_content_selector"
+            android:background="@null"
+            android:padding="@dimen/normal_space" />
+        <ImageButton android:id="@+id/ibtn_delete_users" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:src="@drawable/user_delete_selector"
+            android:background="@null"
+            android:padding="@dimen/normal_space" android:layout_toRightOf="@+id/ibtn_add_users"/>
+
+        <CheckBox android:id="@+id/cb_detail_info" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:background="@drawable/detail_view_selector"
+            android:layout_alignParentRight="true" android:button="@null" android:checked="false"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:id="@+id/ibtn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size18"
+            android:textColor="@color/transparent"
+            android:text="@string/upordown_refresh"
+            android:background="@drawable/btn_notice_selector"
+            android:layout_marginRight="@dimen/space_12"
+            android:layout_toLeftOf="@id/cb_detail_info"/>
+    </RelativeLayout>
+
+    <View android:layout_width="fill_parent" android:layout_height="2dip"
+        android:background="@drawable/title_part_line"/>
+
+    <View android:layout_width="fill_parent"
+          android:layout_height="1dp"
+          android:background="@color/title_area_line"/>
+
+    <RelativeLayout android:id="@+id/rl_loading" android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <include layout="@layout/zxl_include_processbar"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/insertll" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size21"
+            android:id="@+id/tv_adduser_tip" android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="67dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_blue_red_selector"
+            android:text="New Button"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size18"
+            android:id="@+id/btn_adduser" android:layout_below="@+id/tv_adduser_tip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dip" android:paddingLeft="10dip" android:paddingRight="10dip"/>
+    </RelativeLayout>
+
+    <ExpandableListView
+            android:id="@+id/ls_user_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparency"
+            android:focusable="true"
+            android:groupIndicator="@null"
+            android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_bg_selector"
+            android:divider="@color/white"
+            android:childDivider="@color/divider"
+            />
+
+</LinearLayout>

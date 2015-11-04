@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/semi_transparent"
+              >
+
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_add_name_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:background="@color/white" android:paddingBottom="@dimen/normal_space"
+                  android:layout_alignParentBottom="true">
+
+        <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0px" android:layout_height="0px"/>
+        <EditText android:id="@+id/et_myname" android:layout_width="fill_parent" android:layout_height="@dimen/edit_hight" android:hint="@string/my_name" android:gravity="center"
+                  android:layout_marginRight="@dimen/space_15" android:layout_marginTop="@dimen/space_30" android:layout_marginLeft="@dimen/space_15"
+                  android:background="@drawable/main_bottom_bg" android:inputType="text" android:textCursorDrawable="@drawable/cursor_bg" android:textColor="@color/gray" android:textSize="@dimen/text_size18"/>
+
+        <Button android:id="@+id/btn_next_step" android:layout_width="fill_parent" android:layout_height="@dimen/btn_hight45" android:layout_marginLeft="@dimen/space_15" android:layout_marginRight="@dimen/space_15"
+                     android:background="@drawable/btn_blue_red_selector" android:text="@string/next_step" android:textColor="@color/white" android:textSize="@dimen/text_size21"  android:layout_marginTop="@dimen/space_20"/>
+
+        <TextView android:id="@+id/tv_edit_cancle" android:layout_width="fill_parent" android:layout_height="@dimen/btn_hight38" android:text="取消"
+                  android:layout_marginTop="@dimen/normal_space" android:textColor="@drawable/text_blue_red_selector" android:textSize="@dimen/text_size21"
+                  android:layout_centerVertical="true" android:gravity="center" android:layout_marginLeft="@dimen/space_15" android:layout_marginRight="@dimen/space_15" />
+
+    </LinearLayout>
+
+</RelativeLayout>

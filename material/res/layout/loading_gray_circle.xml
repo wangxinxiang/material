@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:gravity="center"
+              android:id="@+id/ll_loading"
+              android:padding="@dimen/space_40"
+                >
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                        android:id="@+id/img_loading"
+                        android:src="@drawable/loading_gray"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                        android:id="@+id/tv_loading_msg"
+                        android:text="数据上传中....."/>
+
+</LinearLayout>

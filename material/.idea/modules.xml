@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://G:/安装包/BaiduLocDemo/BaiduLocDemo.iml" filepath="G:/安装包/BaiduLocDemo/BaiduLocDemo.iml" />
+      <module fileurl="file://G:/安装包/BaiduMapsApiDemo/BaiduMapsApiDemo.iml" filepath="G:/安装包/BaiduMapsApiDemo/BaiduMapsApiDemo.iml" />
+      <module fileurl="file://E:/wang/library/UniversalImageLoader(1)/UniversalImageLoader/UniversalImageLoader.iml" filepath="E:/wang/library/UniversalImageLoader(1)/UniversalImageLoader/UniversalImageLoader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/complain1.iml" filepath="$PROJECT_DIR$/complain1.iml" />
+      <module fileurl="file://G:/安装包/Android-PullToRefresh-master/library/library.iml" filepath="G:/安装包/Android-PullToRefresh-master/library/library.iml" />
+      <module fileurl="file://E:/wang/library/library-refresh/library-refresh.iml" filepath="E:/wang/library/library-refresh/library-refresh.iml" />
+      <module fileurl="file://G:/library/library1.iml" filepath="G:/library/library1.iml" />
+      <module fileurl="file://E:/wang/library/library_always/library_always.iml" filepath="E:/wang/library/library_always/library_always.iml" />
+    </modules>
+  </component>
+</project>

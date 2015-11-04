@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="240dip"
+              android:layout_height="wrap_content"
+              android:background="@drawable/selete_head_bg">
+
+    <Button android:id="@+id/btn_take_pic" android:layout_width="fill_parent" android:layout_height="@dimen/btn_hight38" android:layout_marginLeft="@dimen/space_7" android:layout_marginRight="@dimen/space_7"
+            android:background="@drawable/btn_gray_blue_selector" android:text="@string/take_pic" android:textColor="@color/black" android:textSize="@dimen/text_size18"  android:layout_marginTop="@dimen/space_7"/>
+    <Button android:id="@+id/btn_selete_head_img" android:layout_width="fill_parent" android:layout_height="@dimen/btn_hight38" android:layout_marginLeft="@dimen/space_7" android:layout_marginRight="@dimen/space_7"
+            android:background="@drawable/btn_gray_blue_selector" android:text="@string/selete_head_img" android:textColor="@color/black" android:textSize="@dimen/text_size18"  android:layout_marginTop="@dimen/normal_space"
+            android:layout_marginBottom="@dimen/space_7"/>
+
+</LinearLayout>

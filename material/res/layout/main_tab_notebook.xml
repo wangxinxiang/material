@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+                >
+    <RelativeLayout android:id="@+id/rl_head_photo" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"   android:layout_marginTop="@dimen/space_7"
+                    android:layout_marginBottom="@dimen/space_7">
+
+    <com.jhlc.material.view.RoundImageView
+            android:id="@+id/img_head_photo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            imagecontrol:border_outside_color="#f0f0f0"
+            imagecontrol:border_thickness="2dp"
+            android:background="@drawable/defult_user_headimg"
+            />
+
+    <TextView android:id="@+id/tv_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我" android:textColor="@color/gray" android:textSize="@dimen/text_size16"
+              android:layout_toRightOf="@+id/img_head_photo" android:layout_marginLeft="@dimen/normal_space"
+              android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+    <View android:id="@+id/title_part_line" android:layout_width="fill_parent" android:layout_height="2dip" android:background="@drawable/title_part_line"
+          android:layout_below="@+id/rl_head_photo"></View>
+
+    <ListView
+            android:id="@+id/ls_notebook"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdgeLength="0dp"
+            android:fastScrollEnabled="false"
+            android:background="@null"
+            android:cacheColorHint="#00000000"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:divider="#00000000"
+            android:listSelector="#00000000"
+            android:layout_below="@+id/title_part_line">
+    </ListView>
+
+</RelativeLayout>

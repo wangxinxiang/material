@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:background="@color/white"
+       >
+    <include android:id="@+id/zxl_title" layout="@layout/zxl_title_include" />
+
+    <EditText android:id="@+id/et_updown_name" android:layout_width="fill_parent" android:layout_height="@dimen/edit_hight"
+              android:hint="请输入上级真实姓名" android:textSize="@dimen/text_size14" android:textColor="@color/gray"
+              android:background="@drawable/main_bottom_bg" android:paddingLeft="@dimen/space_7"
+              android:layout_marginLeft="@dimen/normal_space" android:layout_marginRight="@dimen/normal_space"
+              android:layout_marginTop="@dimen/normal_space" android:textCursorDrawable="@drawable/cursor_bg"
+              android:layout_gravity="center_vertical" android:layout_below="@+id/zxl_title"/>
+
+</RelativeLayout>

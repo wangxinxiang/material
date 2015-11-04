@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/semi_transparent"
+        >
+
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_add_name_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:background="@color/white" android:paddingBottom="@dimen/normal_space"
+                  android:layout_alignParentBottom="true" android:paddingLeft="@dimen/space_15" android:paddingRight="@dimen/space_15">
+        <TextView android:id="@+id/tv_take_pictures" android:layout_width="fill_parent" android:layout_height="@dimen/btn_hight45" android:text="照相"
+                  android:layout_marginTop="@dimen/normal_space"  android:textColor="@color/black" android:textSize="@dimen/text_size21"
+                  android:gravity="center"/>
+
+        <View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@color/main_bg"></View>
+
+        <TextView android:id="@+id/tv_photo_album" android:layout_width="fill_parent" android:layout_height="@dimen/btn_hight45" android:text="从相册选择头像"
+                  android:textColor="@color/black" android:textSize="@dimen/text_size21"
+                  android:gravity="center"/>
+
+        <View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@color/main_bg"></View>
+
+        <TextView android:id="@+id/tv_edit_cancle" android:layout_width="fill_parent" android:layout_height="@dimen/btn_hight38" android:text="取消"
+                  android:layout_marginTop="@dimen/normal_space" android:textColor="@drawable/text_blue_red_selector" android:textSize="@dimen/text_size21"
+                  android:layout_centerVertical="true" android:gravity="center" />
+
+    </LinearLayout>
+
+</RelativeLayout>

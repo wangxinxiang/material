@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+               xmlns:android_custom="http://schemas.android.com/apk/res/com.jhlc.material"
+               xmlns:tools="http://schemas.android.com/tools"
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               tools:context=".MainActivity"
+                >
+
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@color/white">
+
+        <RelativeLayout android:id="@+id/rl_close_actvity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingTop="@dimen/normal_space" android:paddingBottom="@dimen/normal_space"
+                        android:paddingLeft="@dimen/normal_space" android:paddingRight="@dimen/normal_space" android:clickable="true">
+            <ImageView android:id="@+id/ibtn_close_actvity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/back_activity_selector"/>
+        </RelativeLayout>
+
+        <TextView android:id="@+id/tv_which_task" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:textColor="@color/gray" android:textSize="@dimen/text_size18"
+                  android:layout_centerVertical="true" android:layout_toRightOf="@+id/rl_close_actvity"/>
+
+        <RelativeLayout
+                android:id="@+id/rl_add"
+                android:layout_width="wrap_content" android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+            <ImageButton android:id="@+id/ibtn_add_task" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/add_content_selector"
+                         android:paddingRight="@dimen/normal_space" android:paddingLeft="@dimen/space_7" android:paddingTop="@dimen/normal_space" android:paddingBottom="@dimen/normal_space" android:background="@color/white"/>
+        </RelativeLayout>
+        <CheckBox android:id="@+id/cb_detail_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/detail_view_selector"
+                  android:layout_alignParentRight="false" android:button="@null" android:checked="true"
+                  android:layout_toLeftOf="@+id/rl_add" android:layout_centerVertical="true" android:layout_marginRight="@dimen/normal_space" />
+
+    </RelativeLayout>
+
+    <View android:id="@+id/title_part_line" android:layout_width="fill_parent" android:layout_height="2dip" android:background="@drawable/title_part_line"></View>
+
+    <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@color/main_bg">
+        <RelativeLayout
+                android:id="@+id/rl_dynamic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <com.jhlc.material.view.MyRadioGroup
+                    android:id="@+id/select_title" android:layout_width="fill_parent" android:layout_height="60dip"
+                    android:orientation="horizontal" android:background="@drawable/main_bottom_bg"
+                    >
+                <RelativeLayout
+                        android:id="@+id/rl_running"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_below="@+id/tv_tip"
+                        android:layout_weight="1"
+                        >
+                    <RadioButton
+                            android:id="@+id/rb_running"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:button="@null"
+                            />
+
+                    <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <TextView android:id="@+id/tv_running" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="@color/main_blue" android:textSize="22sp"
+                                  android:layout_centerHorizontal="true"/>
+                        <TextView android:id="@+id/tv_title1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="执行中" android:textColor="@color/main_blue" android:textSize="12sp"
+                                  android:layout_centerInParent="true" android:layout_below="@+id/tv_running"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/rl_timeout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_below="@+id/tv_tip"
+                        android:layout_weight="1">
+                    <RadioButton
+                            android:id="@+id/rb_timeout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:button="@null"/>
+
+                    <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <TextView android:id="@+id/tv_timeout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="@color/gray" android:textSize="22sp"
+                                  android:layout_centerHorizontal="true" />
+                        <TextView android:id="@+id/tv_title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="超时" android:textColor="@color/gray" android:textSize="12sp"
+                                  android:layout_centerInParent="true" android:layout_below="@+id/tv_timeout"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/rl_ontime"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_below="@+id/tv_tip"
+                        android:layout_weight="1">
+                    <RadioButton
+                            android:id="@+id/rb_ontime"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:button="@null"/>
+
+                    <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <TextView android:id="@+id/tv_ontime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="@color/gray" android:textSize="22sp"
+                                  android:layout_centerHorizontal="true" />
+                        <TextView android:id="@+id/tv_title3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="完成" android:textColor="@color/gray" android:textSize="12sp"
+                                  android:layout_centerInParent="true" android:layout_below="@+id/tv_ontime"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/rl_timeout_complete"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_below="@+id/tv_tip"
+                        android:layout_weight="1">
+                    <RadioButton
+                            android:id="@+id/rb_timeout_complete"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:button="@null" />
+
+                    <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <TextView android:id="@+id/tv_timeout_complete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="@color/gray" android:textSize="22sp"
+                                  android:layout_centerHorizontal="true" />
+                        <TextView android:id="@+id/tv_title4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="总数" android:textColor="@color/gray" android:textSize="12sp"
+                                  android:layout_centerInParent="true" android:layout_below="@+id/tv_timeout_complete"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/rl_all"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_below="@+id/tv_tip"
+                        android:layout_weight="1">
+                    <RadioButton
+                            android:id="@+id/rb_all"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:button="@null" android:checked="false"/>
+
+                    <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <TextView android:id="@+id/tv_all_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="@color/gray" android:textSize="22sp"
+                                  android:layout_centerHorizontal="true" />
+                        <TextView android:id="@+id/tv_title5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="未汇报" android:textColor="@color/gray" android:textSize="12sp"
+                                  android:layout_centerInParent="true" android:layout_below="@+id/tv_all_count"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </com.jhlc.material.view.MyRadioGroup>
+            <LinearLayout android:id="@+id/reim_select_title" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@color/white"
+                          android:gravity="center" android:visibility="gone" >
+                <com.jhlc.material.view.RoundProgressBar
+                        android:id="@+id/roundProgressBar"
+                        android:layout_width="55dip"
+                        android:layout_height="55dip"
+                        android_custom:roundColor="@color/progress_surplus"
+                        android_custom:roundProgressColor="@color/progress_already"
+                        android_custom:textColor="#9A32CD"
+                        android_custom:textIsDisplayable="false"
+                        android:layout_marginLeft="@dimen/normal_space"
+                        android:layout_marginTop="@dimen/space_7"
+                        android:layout_marginBottom="@dimen/space_7"
+                        android_custom:roundWidth="12dip"
+                        android_custom:textSize="18sp"
+                        />
+
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_7" android:layout_marginBottom="@dimen/space_7"
+                          >
+                <RelativeLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:gravity="center_horizontal">
+                    <RelativeLayout  android:id="@+id/rl_all_money" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:id="@+id/tv_all_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1000" android:textColor="@color/gray" android:textSize="@dimen/text_size18"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" android:textColor="@color/gray" android:textSize="@dimen/text_size12"
+                                  android:layout_toRightOf="@+id/tv_all_money" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <TextView android:id="@+id/tv_my_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的总额" android:textColor="@color/gray" android:textSize="@dimen/text_size14"
+                              android:layout_below="@+id/rl_all_money"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:gravity="center">
+                    <RelativeLayout  android:id="@+id/rl_already_money" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:id="@+id/tv_already_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="400" android:textColor="@color/gray" android:textSize="@dimen/text_size18"
+                            />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" android:textColor="@color/gray" android:textSize="@dimen/text_size12"
+                              android:layout_toRightOf="@+id/tv_already_money" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <TextView android:id="@+id/tv_already_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已用40%" android:textColor="@color/gray" android:textSize="@dimen/text_size14"
+                              android:layout_below="@+id/rl_already_money"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:gravity="center_horizontal">
+                    <RelativeLayout  android:id="@+id/rl_surplus_money" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:id="@+id/tv_surplus_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="600" android:textColor="@color/gray" android:textSize="@dimen/text_size18"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" android:textColor="@color/gray" android:textSize="@dimen/text_size12"
+                                  android:layout_toRightOf="@+id/tv_surplus_money"
+                                  android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <TextView android:id="@+id/tv_surplus_my_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="剩余60%" android:textColor="@color/gray" android:textSize="@dimen/text_size14"
+                              android:layout_below="@+id/rl_surplus_money"/>
+                </RelativeLayout>
+                </LinearLayout>
+                <View android:layout_width="fill_parent" android:layout_height="2dip" android:background="@drawable/title_part_line"></View>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/insertll" android:layout_below="@+id/rl_dynamic" android:layout_width="match_parent" android:layout_height="match_parent"  android:visibility="visible">
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/no_task"
+                    android:src="@drawable/no_task"
+                    android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+                    android:layout_marginTop="67dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="目前没有执行中的任务"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_size21"
+                    android:id="@+id/tv_addtask_tip"
+                    android:layout_alignParentTop="false" android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/no_task" android:layout_marginTop="20dip"/>
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_blue_red_selector"
+                    android:text="新建任务"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size18"
+                    android:id="@+id/btn_addtask" android:layout_below="@+id/tv_addtask_tip" android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dip" android:paddingLeft="10dip" android:paddingRight="10dip" android:visibility="gone"/>
+        </RelativeLayout>
+        <com.jhlc.material.view.PullToRefreshView
+                android:id="@+id/pull_refresh_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/main_bg"
+                android:layout_below="@+id/insertll"
+                >
+            <ListView
+                    android:id="@+id/ls_up_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="@dimen/normal_space"
+                    android:paddingBottom="@dimen/normal_space"
+                    android:fadingEdgeLength="0dp"
+                    android:fastScrollEnabled="false"
+                    android:layout_marginLeft="@dimen/normal_space"
+                    android:layout_marginRight="@dimen/normal_space"
+                    android:background="@null"
+                    android:cacheColorHint="#00000000"
+                    android:divider="#00000000"
+                    android:dividerHeight="10dp"
+                    android:listSelector="#00000000">
+            </ListView>
+        </com.jhlc.material.view.PullToRefreshView>
+
+        <include layout="@layout/zxl_include_processbar" />
+
+    </RelativeLayout>
+</LinearLayout>

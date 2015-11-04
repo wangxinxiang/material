@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://G:/安装包/BaiduMapsApiDemo/libs/baidumapapi_v3_3_0.jar!/" />
+      <root url="jar://G:/安装包/BaiduMapsApiDemo/libs/locSDK_5.0.jar!/" />
+      <root url="jar://G:/安装包/BaiduMapsApiDemo/libs/android-support-v4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

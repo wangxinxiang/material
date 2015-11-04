@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+        >
+    <include android:id="@+id/zxl_title" layout="@layout/zxl_title_include" />
+
+
+        <RelativeLayout android:id="@+id/rl_edit" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                        android:layout_below="@+id/zxl_title" android:paddingLeft="@dimen/normal_space" android:paddingRight="@dimen/normal_space">
+
+            <EditText android:id="@+id/et_edit_task" android:layout_width="fill_parent" android:layout_height="@dimen/edit_hight"
+                      android:hint="" android:textSize="@dimen/text_size14" android:textColor="@color/gray"
+                      android:background="@drawable/main_bottom_bg" android:paddingLeft="@dimen/space_7"
+                      android:layout_marginTop="@dimen/normal_space" android:textCursorDrawable="@drawable/cursor_bg"
+                      android:layout_gravity="center_vertical" />
+
+
+            <RelativeLayout android:id="@+id/rl_limit_time" android:layout_width="wrap_content" android:layout_height="@dimen/btn_hight45"
+                            android:layout_centerHorizontal="true" android:background="@drawable/list_line_bg_selector"
+                            android:layout_below="@+id/et_edit_task" android:layout_alignLeft="@+id/et_edit_task"
+                            android:layout_alignRight="@+id/et_edit_task">
+                <TextView android:id="@+id/tv_limit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="限期" android:textSize="@dimen/text_size14" android:textColor="@color/gray"
+                          android:layout_centerVertical="true" android:layout_marginLeft="@dimen/space_7"/>
+                <TextView android:id="@+id/tv_limit_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1天" android:textSize="@dimen/text_size16" android:textColor="@color/black"
+                          android:layout_marginLeft="@dimen/space_7" android:layout_marginRight="@dimen/space_7"
+                          android:layout_toLeftOf="@+id/tv_complate" android:layout_centerVertical="true"/>
+                <TextView android:id="@+id/tv_complate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="完成" android:textSize="@dimen/text_size14" android:textColor="@color/gray"
+                          android:layout_centerVertical="true" android:layout_marginRight="@dimen/space_7"
+                          android:layout_toLeftOf="@+id/img_forward"/>
+                <ImageView android:id="@+id/img_forward" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                           android:layout_centerVertical="true" android:src="@drawable/items_forward"
+                           android:layout_alignParentRight="true" android:paddingRight="@dimen/space_7"/>
+            </RelativeLayout>
+
+            <RelativeLayout android:id="@+id/rl_switch" android:layout_width="wrap_content" android:layout_height="@dimen/btn_hight45"
+                            android:layout_centerHorizontal="true" android:background="@drawable/list_line_bg_selector"
+                            android:layout_below="@+id/rl_limit_time" android:layout_alignLeft="@+id/et_edit_task"
+                            android:layout_alignRight="@+id/et_edit_task">
+                <TextView android:id="@+id/tv_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="日报" android:textSize="@dimen/text_size14" android:textColor="@color/gray"
+                          android:layout_centerVertical="true" android:layout_marginLeft="@dimen/space_7"/>
+
+                <CheckBox
+                        android:id="@+id/ck_everyday_report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/checkbox_selector"
+                        android:button="@null"
+                        android:checked="false" android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+            <LinearLayout
+                    android:id="@+id/ll_timePicker"
+
+                    android:layout_width="fill_parent" android:visibility="gone"
+                    android:layout_height="match_parent" android:layout_marginTop="@dimen/space_20"
+                    android:layout_centerHorizontal="true" android:layout_below="@+id/rl_edit"
+                    android:orientation="vertical">
+
+                <com.jhlc.material.view.wheelview.WheelView
+                        android:id="@+id/day"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp" android:layout_marginLeft="10dip" android:layout_marginRight="10dip"
+                        android:layout_marginBottom="10dip"/>
+
+                <com.jhlc.material.view.wheelview.WheelView
+                        android:id="@+id/hour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:visibility="gone"
+                        android:layout_marginLeft="10dip"/>
+
+            </LinearLayout>
+
+</RelativeLayout>

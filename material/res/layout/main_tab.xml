@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+         android:id="@android:id/tabhost"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+        <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:visibility="gone" />
+
+        <com.jhlc.material.view.MyRadioGroup
+                android:id="@+id/bottom_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_bottom_bg"
+                android:orientation="horizontal"
+                >
+
+            <RelativeLayout
+                    android:id="@+id/rl_upuser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_tip"
+                    android:layout_weight="1">
+                <RadioButton
+                        android:id="@+id/tab_up_user"
+                        style="@style/radio_navigation_bar_bottom_tab"
+                        android:drawableTop="@drawable/tab_upuser_selector"
+                        android:text="上级"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"
+                        />
+
+                <RelativeLayout
+                        android:id="@+id/rl_up_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginRight="30dp"
+                        android:visibility="gone"
+                        >
+                    <ImageView
+                            android:id="@+id/img_up_tips"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/red_dot"
+                            android:layout_centerInParent="true"
+                            />
+                    <TextView
+                            android:id="@+id/tv_up_tips"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:layout_centerInParent="true"/>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                    android:id="@+id/rl_downuser"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_tip"
+                    android:layout_weight="1">
+                <RadioButton
+                        android:id="@+id/tab_down_user"
+                        style="@style/radio_navigation_bar_bottom_tab"
+                        android:drawableTop="@drawable/tab_downuser_selector"
+                        android:text="下属"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"
+                        android:layout_centerInParent="true"/>
+
+                <RelativeLayout
+                        android:id="@+id/rl_down_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginRight="30dp"
+                        android:visibility="gone"
+                        >
+                    <ImageView
+                            android:id="@+id/img_down_tips"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/red_dot"
+                            android:layout_centerInParent="true"
+                            />
+                    <TextView
+                            android:id="@+id/tv_down_tips"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:layout_centerInParent="true"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <RadioButton
+                    android:id="@+id/tab_note_book"
+                    style="@style/radio_navigation_bar_bottom_tab"
+                    android:drawableTop="@drawable/tab_notebook_selector"
+                    android:text="日志"
+                    android:layout_weight="1"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"/>
+
+            <RadioButton
+                    android:id="@+id/tab_content_us"
+                    style="@style/radio_navigation_bar_bottom_tab"
+                    android:drawableTop="@drawable/tab_tellus_selector"
+                    android:text="我"
+                    android:layout_weight="1"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"/>
+
+    </com.jhlc.material.view.MyRadioGroup>
+    </LinearLayout>
+
+</TabHost>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_hight">54dp</dimen>
+
+    <dimen name="text_size21">21sp</dimen>
+    <dimen name="text_size18">18sp</dimen>
+    <dimen name="text_size16">16sp</dimen>
+    <dimen name="text_size14">14sp</dimen>
+    <dimen name="text_size12">12sp</dimen>
+
+    <dimen name="text_space">3dip</dimen>
+    <dimen name="space_7">7dip</dimen>
+    <dimen name="normal_space">10dip</dimen>
+
+
+    <dimen name="space_2">2dip</dimen>
+    <dimen name="space_4">4dip</dimen>
+    <dimen name="space_6">6dip</dimen>
+
+    <dimen name="space_8">8dip</dimen>
+    <dimen name="space_10">10dip</dimen>
+    <dimen name="space_12">12dip</dimen>
+    <dimen name="space_14">14dip</dimen>
+    <dimen name="space_15">15dip</dimen>
+    <dimen name="space_20">20dip</dimen>
+    <dimen name="space_25">30dip</dimen>
+    <dimen name="space_30">30dip</dimen>
+    <dimen name="space_40">40dip</dimen>
+    <dimen name="space_50">50dip</dimen>
+    <dimen name="space_60">60dip</dimen>
+    <dimen name="space_80">60dip</dimen>
+
+    <!--1.45版新增-->
+    <dimen name="arrow_size">30dip</dimen>
+    <dimen name="arrow_padding">4dip</dimen>
+
+
+    <!--1.44版-->
+    <dimen name="edit_hight">45dip</dimen>
+    <dimen name="btn_close">32dip</dimen>
+    <dimen name="btn_hight45">45dip</dimen>
+    <dimen name="btn_hight38">38dip</dimen>
+    <dimen name="popmenu_width">240dip</dimen>
+    <dimen name="slidingmenu_offset">100dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+
+</resources>

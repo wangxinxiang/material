@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_bg_gray">
+    <include layout="@layout/zxl_title_single_include"/>
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+            >
+        <Button android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_light_blue_selector"
+                android:text="@string/btn_down"
+                android:id="@+id/btn_task_down"
+                android:textSize="@dimen/text_size18"
+                android:layout_marginTop="@dimen/space_12"
+                android:layout_marginBottom="@dimen/space_12"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/space_60"
+                android:layout_marginRight="@dimen/space_60"
+                />
+        <Button android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_light_blue_selector"
+                android:text="@string/btn_up"
+                android:id="@+id/btn_task_up"
+                android:textSize="@dimen/text_size18"
+                android:layout_marginTop="@dimen/space_12"
+                android:layout_marginBottom="@dimen/space_12"
+                android:layout_above="@+id/btn_task_down"
+                android:layout_marginLeft="@dimen/space_60"
+                android:layout_marginRight="@dimen/space_60"
+                />
+
+        <Button android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_light_blue_selector"
+                android:text="@string/btn_department"
+                android:id="@+id/btn_task_dep"
+                android:textSize="@dimen/text_size18"
+                android:layout_marginTop="@dimen/space_12"
+                android:layout_marginBottom="@dimen/space_12"
+                android:layout_below="@+id/btn_task_down"
+                android:layout_marginLeft="@dimen/space_60"
+                android:layout_marginRight="@dimen/space_60"
+                />
+
+    </RelativeLayout>
+
+</LinearLayout>

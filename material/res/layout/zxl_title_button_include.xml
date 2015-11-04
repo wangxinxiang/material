@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white">
+    <RelativeLayout android:id="@+id/rl_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+            android:paddingRight="@dimen/space_12">
+        <ImageButton android:id="@+id/ibtn_close_edit" android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" android:src="@drawable/back_activity_selector"
+                     android:background="@color/white"
+                     android:padding="@dimen/normal_space"
+
+                     android:scaleType="center"/>
+        <TextView android:id="@+id/tv_title_name" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:text="新建任务" android:textColor="@color/gray"
+                  android:textSize="@dimen/text_size18"
+                  android:layout_toRightOf="@+id/ibtn_close_edit" android:layout_centerVertical="true"/>
+        <TextView android:id="@+id/tv_title_centre" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:text="注册" android:textColor="@color/gray"
+                  android:textSize="@dimen/text_size18"
+                  android:layout_centerInParent="true" android:visibility="gone"/>
+        <Button android:id="@+id/ibtn_submit_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提交"
+                android:paddingLeft="@dimen/space_10"
+                android:paddingRight="@dimen/space_10"
+                android:textColor="@color/white"
+                android:background="@drawable/small_btn_blue_selector"
+                android:layout_alignParentRight="true"
+
+                android:layout_centerVertical="true" android:visibility="gone"/>
+        <ImageButton android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:src="@drawable/delete_selector"
+                     android:id="@+id/ibtn_title_delete"
+                     android:background="@color/transparency"
+                     android:layout_toLeftOf="@id/ibtn_submit_edit"
+                     android:layout_centerVertical="true"
+                     android:layout_marginRight="@dimen/space_12"
+                     android:visibility="gone"
+                />
+    </RelativeLayout>
+
+    <View android:layout_width="fill_parent"
+          android:layout_height="2dip"
+          android:background="@drawable/title_part_line"
+          android:layout_below="@+id/rl_title"></View>
+
+</LinearLayout>

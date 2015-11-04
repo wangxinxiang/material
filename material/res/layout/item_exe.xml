@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/list_bg_selector"
+              android:padding="@dimen/space_12">
+    <TextView android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:id="@+id/tv_item_exe_office"
+              android:text="很长长很的的的的的字"
+              android:gravity="center|left"
+              android:textSize="@dimen/text_size18"
+              android:textColor="@color/gray"
+              android:singleLine="true"
+              android:ellipsize="end"
+            />
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_marginLeft="@dimen/space_12"
+                  android:layout_marginRight="@dimen/space_12"
+            >
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:textColor="@color/gray"
+                  android:textSize="@dimen/text_size16"
+                  android:id="@+id/tv_item_exe_doing"
+                  android:text="100"/>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:textColor="@color/gray"
+                  android:textSize="@dimen/text_size14"
+                  android:text="@string/tv_exe_doing"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_marginLeft="@dimen/space_12"
+                  android:layout_marginRight="@dimen/space_12"
+            >
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:textColor="@color/gray"
+                  android:textSize="@dimen/text_size16"
+                  android:id="@+id/tv_item_exe_finish"
+                  android:text="100"/>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:textColor="@color/gray"
+                  android:textSize="@dimen/text_size14"
+                  android:text="@string/tv_exe_finish"/>
+    </LinearLayout>
+</LinearLayout>

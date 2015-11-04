@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.jhlc.material"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="15"/>
+    <!-- 1F:86:81:F4:81:43:A0:4D:31:11:C7:3A:C6:11:11:D6:91:1D:F0:18 -->
+    <!-- 震动 -->
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <!-- 检测网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 获取mac地址作为用户的备用唯一标识 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 获取用户手机的IMEI，用来唯一的标识用户 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 允许应用程序联网，以便向我们的服务器端发送数据 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!--&lt;!&ndash;百度地图&ndash;&gt;-->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <application android:label="@string/app_name" android:name="com.jhlc.material.ZXLApplication" android:icon="@drawable/logo">
+        <activity android:name="com.jhlc.material.AppLoading" android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:label="@string/app_name" android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!--<activity android:name=".MainFragmentActivity" android:screenOrientation="portrait"-->
+                  <!--android:theme="@android:style/Theme.NoTitleBar"-->
+                  <!--android:label="@string/app_name" android:windowSoftInputMode="adjustPan|stateHidden">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN"/>-->
+                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+
+        <!--新版activity -->
+        <activity android:name="com.jhlc.material.NoticeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan"
+            />
+        <activity android:name="com.jhlc.material.MainFragmentActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="adjustPan"
+                 />
+        <activity android:name="com.jhlc.material.TaskDepListActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                 />
+        <activity android:name="com.jhlc.material.TaskDepDetailActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                 />
+        <activity android:name="com.jhlc.material.AddOrEditTaskActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="adjustUnspecified"/>
+
+
+        <activity android:name="com.jhlc.material.TaskDep_Add_Activity"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                 />
+        <activity android:name="com.jhlc.material.TaskDep_Edit_Activity"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                 />
+        <activity android:name="com.jhlc.material.TaskDepDetail_Add_Activity"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                 />
+        <activity android:name="com.jhlc.material.TaskDepDetail_Edit_Activity"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                 />
+
+        <!--旧版activity -->
+        <activity android:name="com.jhlc.material.LoginActivity" android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.jhlc.material.SettingActivity" android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.jhlc.material.SettingAddHeadImageActivity" android:screenOrientation="portrait"
+                  android:theme="@style/MyDialogStyleTopFull"/>
+        <activity android:name="com.jhlc.material.DisplayImageActivity" android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"/>
+
+        <!--tabhost-->
+        <activity android:name="com.jhlc.material.AllOfficeActivity" android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.jhlc.material.NoteBookActivity" android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.jhlc.material.ContactUsActivity" android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.jhlc.material.WorkItemsDetailActivity" android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"/>
+
+        <activity android:name="com.jhlc.material.AddPaymentActivity" android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"/>
+
+        <activity android:name="com.jhlc.material.LogSystemActivity" android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.jhlc.material.LogSystemItemActivity" android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"/>
+
+        <activity android:name="com.jhlc.material.AddNameActivity" android:screenOrientation="portrait"
+                  android:theme="@style/MyDialogStyleTopFull" android:windowSoftInputMode="adjustResize"
+                  android:launchMode="singleInstance"/>
+        <activity android:name="com.jhlc.material.AddHeadImageActivity" android:screenOrientation="portrait"
+                  android:theme="@style/MyDialogStyleTopFull"/>
+        <activity android:name="com.jhlc.material.AddNoteBookActivity" android:screenOrientation="portrait"
+                  android:theme="@style/MyDialogStyleTopFull" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.jhlc.material.ProgressReportActivity" android:screenOrientation="portrait"
+                  android:theme="@style/MyDialogStyleTopFull" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.jhlc.material.RefreshProgressReportActivity" android:screenOrientation="portrait"
+                  android:theme="@style/MyDialogStyleTopFull" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.jhlc.material.AllocatTaskActivity" android:screenOrientation="portrait"
+                  android:theme="@style/MyDialogStyleTopFull" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.jhlc.material.AddUsersActivity" android:screenOrientation="portrait"
+                  android:theme="@style/MyDialogStyleTopFull" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.jhlc.material.AddNoteBookContent" android:screenOrientation="portrait"
+                  android:theme="@style/MyDialogStyleTopFull" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.jhlc.material.NoticeDialog" android:screenOrientation="portrait"
+                  android:theme="@style/MyDialogStyleTopFull"/>
+        <activity android:name="com.jhlc.material.PhotoViewer" android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.jhlc.material.ClipPictureActivity" android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.jhlc.material.RegisterActivity" android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"/>
+
+        <activity android:name="com.jhlc.material.MyInfoActivity" android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.jhlc.material.AddLogSystem" android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"/>
+
+        <!--  选择时间页面 -->
+        <activity android:name="com.jhlc.material.DatePickerActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/DateStyleTopFull"/>
+
+        <!--友盟自动更新界面activity-->
+        <activity
+                android:name="com.umeng.update.UpdateDialogActivity"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+        <service android:name="com.jhlc.material.service.NewMessageService">
+            <intent-filter>
+                <action android:name="com.jhlc.material.service.NewMessageService"/>
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.jhlc.material.service.AlarmReceiver" android:process=":remote"></receiver>
+
+        <service
+                android:name="com.baidu.location.f"
+                android:enabled="true"
+                android:process=":remote">
+        </service>
+
+
+        <!--add umeng message-->
+
+        <receiver
+                android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
+                android:exported="false">
+        </receiver>
+        <receiver android:name="com.umeng.message.RegistrationReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.umeng.message.UmengBroadcastReceiver">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.jhlc.ls.intent.action.COMMAND"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RE_ELECTION_V2"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+                android:name="com.umeng.message.UmengService"
+                android:exported="true"
+                android:process=":umengService_v1">
+            <intent-filter>
+                <action android:name="com.jhlc.ls.intent.action.START"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.jhlc.ls.intent.action.COCKROACH"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.PING"/>
+            </intent-filter>
+        </service>
+        <service
+                android:name="org.android.agoo.service.ElectionService"
+                android:exported="true"
+                android:process=":umengService_v1">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.ELECTION_V2"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.umeng.message.UmengIntentService"/>
+
+        <meta-data
+                android:name="com.baidu.lbsapi.API_KEY"
+                android:value="7Ve1slzP7GxxvSCAOMt4zW3y"/>
+        <meta-data
+                android:name="UMENG_APPKEY"
+                android:value="5621ee6f67e58ebef0002702">
+        </meta-data>
+        <!--<meta-data-->
+                <!--android:name="UMENG_MESSAGE_SECRET"-->
+                <!--android:value="606b808070ac6f5a04ba760bbefa7294">-->
+        <!--</meta-data>-->
+        <meta-data
+                android:name="UMENG_CHANNEL"
+                android:value="Umeng">
+        </meta-data>
+        <!-- If you donot want to use the standard notification bar in SDK, you can define IntentService instead to handle message. -->
+        <service android:name="com.jhlc.material.ZxlPushIntentService"/>
+        <service android:name="com.umeng.message.UmengDownloadResourceService"/>
+        <!--友盟自动更新下载service-->
+        <service
+                android:name="com.umeng.update.net.DownloadingService"
+                android:process=":DownloadingService">
+        </service>
+
+    </application>
+</manifest>

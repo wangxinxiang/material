@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+              <include layout="@layout/zxl_title_button_include" />
+    <include layout="@layout/item_task_dep_detail" />
+    <include layout="@layout/item_task_dep_group"/>
+    <ListView
+              android:id="@+id/lv_task_dep_detail"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fadingEdgeLength="0dp"
+              android:fastScrollEnabled="false"
+              android:cacheColorHint="@color/transparency"
+              android:background="@color/white"
+              android:focusable="true"
+              android:groupIndicator="@null"
+              android:dividerHeight="1dp"
+              android:divider="@color/divider"
+            />
+
+
+</LinearLayout>

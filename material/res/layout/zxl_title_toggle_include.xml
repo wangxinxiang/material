@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_title_single_for_height"
+              android:text="@string/tab_task"
+              android:textColor="@color/gray"
+              android:gravity="center_horizontal"
+              android:padding="@dimen/space_12"
+              android:textSize="@dimen/text_size21"
+              android:visibility="invisible"
+            />
+    <RadioGroup android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:id="@+id/group_toggle">
+        <RadioButton android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/toggle_left_selector"
+                     android:button="@null"
+                     android:gravity="center"
+                     android:textColor="@color/white"
+                     android:textSize="@dimen/text_size16"
+                     android:text="@string/rbtn_toggle_left"
+                     android:id="@+id/rbtn_toggle_left"
+                     android:checked="true"/>
+        <RadioButton android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/toggle_right_selector"
+                     android:button="@null"
+                     android:gravity="center"
+                     android:textColor="@color/white"
+                     android:textSize="@dimen/text_size16"
+                     android:text="@string/rbtn_toggle_right"
+                     android:id="@+id/rbtn_toggle_right"/>
+    </RadioGroup>
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@drawable/title_part_line"
+            android:layout_below="@+id/tv_title_single_for_height"
+            />
+</RelativeLayout>

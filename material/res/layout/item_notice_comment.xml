@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/space_12">
+
+    <TextView
+        android:id="@+id/tv_item_notice_comment_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18297608334"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_size16" />
+
+    <TextView
+        android:id="@+id/tv_item_notice_comment_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_item_notice_comment_phone"
+        android:layout_marginTop="@dimen/space_4"
+        android:text="8分钟前"
+        android:textColor="@color/transparent"
+        android:textSize="@dimen/text_size12" />
+
+    <TextView
+        android:id="@+id/tv_item_notice_comment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_item_notice_comment_time"
+        android:layout_marginTop="@dimen/space_4"
+        android:text="加油"
+        android:textColor="@color/semi_transparent"
+        android:textSize="@dimen/text_size16" />
+
+    <LinearLayout
+        android:id="@+id/ll_item_notice_comment_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_item_notice_comment_content"
+        android:layout_marginBottom="@dimen/space_6"
+        android:layout_marginTop="@dimen/space_6"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/tv_item_notice_comment_commit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/ll_item_notice_comment_add"
+        android:drawableLeft="@drawable/tab4_message"
+        android:drawablePadding="@dimen/space_4"
+        android:text="@string/comment_reply"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/text_size14"
+        android:visibility="gone"/>
+</RelativeLayout>

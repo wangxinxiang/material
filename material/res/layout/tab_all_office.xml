@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+    <RelativeLayout android:id="@+id/rl_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日志"
+                android:textSize="@dimen/text_size21"
+                android:id="@+id/textView" android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/normal_space"
+                android:textColor="@color/gray"/>
+
+
+    </RelativeLayout>
+    <View android:id="@+id/title_part_line" android:layout_width="fill_parent" android:layout_height="2dip"
+          android:background="@drawable/title_part_line"
+          android:layout_below="@+id/rl_title"></View>
+    <RelativeLayout
+            android:id="@+id/log_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/normal_space"
+            android:layout_marginBottom="@dimen/normal_space"
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_marginRight="@dimen/space_15"
+            android:layout_below="@+id/title_part_line">
+
+        <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:focusable="true"
+                android:src="@drawable/tab_single_upuser_pressed"/>
+
+        <ImageButton
+                android:id="@+id/office_search"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/office_search"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:background="@null"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:visibility="visible" android:scaleType="center"/>
+
+
+        <EditText
+                android:id="@+id/office_search_text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:hint="输入关键字进行搜索"
+                android:background="@null"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:textSize="@dimen/text_size16"
+                />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/ofice_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/log_search">
+        <include layout="@layout/zxl_include_processbar"/>
+    </RelativeLayout>
+
+    <ExpandableListView
+            android:layout_below="@+id/ofice_loading"
+            android:id="@+id/all_office_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdgeLength="0dp"
+            android:fastScrollEnabled="false"
+            android:background="@color/linegray"
+            android:cacheColorHint="#00000000"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:groupIndicator="@null"
+            android:divider="#00000000"
+            android:listSelector="#00000000"
+
+            >
+    </ExpandableListView>
+
+</RelativeLayout>
